@@ -3,21 +3,21 @@
 arg = gets.chomp
 argl = arg.length
 argf = ""
-$etape = 0
+etape = 0
 
 # CODE
 
 for i in 0..argl - 1
 
-    $etape += 1
+    etape += 1
     
     if arg[i] == " "
-        $etape -= 1
+        etape -= 1
         argf = argf + arg[i]
         next
     end
 
-    if $etape % 2 == 0
+    if etape % 2 == 0
         # puts arg[i].upcase
         argf = argf + arg[i].upcase        
     else
